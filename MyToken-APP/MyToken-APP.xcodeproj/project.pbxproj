@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D828409627BDA6CE008BEF33 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D828409527BDA6CE008BEF33 /* Coin.swift */; };
+		D828409A27BDC14B008BEF33 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = D828409927BDC14B008BEF33 /* Row.swift */; };
+		D828409D27BDC3E6008BEF33 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D828409C27BDC3E6008BEF33 /* Image.swift */; };
+		D82840A127BDCCD6008BEF33 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82840A027BDCCD6008BEF33 /* List.swift */; };
 		D8698EA127BD778200D4BB3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8698EA027BD778200D4BB3C /* AppDelegate.swift */; };
 		D8698EA327BD778200D4BB3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8698EA227BD778200D4BB3C /* SceneDelegate.swift */; };
 		D8698EA527BD778200D4BB3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8698EA427BD778200D4BB3C /* ContentView.swift */; };
@@ -14,9 +18,14 @@
 		D8698EAA27BD778500D4BB3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8698EA927BD778500D4BB3C /* Assets.xcassets */; };
 		D8698EAD27BD778500D4BB3C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8698EAC27BD778500D4BB3C /* Preview Assets.xcassets */; };
 		D8698EB027BD778500D4BB3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8698EAE27BD778500D4BB3C /* LaunchScreen.storyboard */; };
+		D8698EB927BD791A00D4BB3C /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8698EB827BD791A00D4BB3C /* APIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D828409527BDA6CE008BEF33 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		D828409927BDC14B008BEF33 /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
+		D828409C27BDC3E6008BEF33 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		D82840A027BDCCD6008BEF33 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		D8698E9D27BD778200D4BB3C /* MyToken-APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyToken-APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8698EA027BD778200D4BB3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8698EA227BD778200D4BB3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +35,7 @@
 		D8698EAC27BD778500D4BB3C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D8698EAF27BD778500D4BB3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8698EB127BD778500D4BB3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8698EB827BD791A00D4BB3C /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D828409427BDA6BB008BEF33 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D828409527BDA6CE008BEF33 /* Coin.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D8698E9427BD778200D4BB3C = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +76,19 @@
 		D8698E9F27BD778200D4BB3C /* MyToken-APP */ = {
 			isa = PBXGroup;
 			children = (
+				D828409427BDA6BB008BEF33 /* Model */,
 				D8698EA027BD778200D4BB3C /* AppDelegate.swift */,
 				D8698EA227BD778200D4BB3C /* SceneDelegate.swift */,
+				D8698EB827BD791A00D4BB3C /* APIService.swift */,
+				D828409927BDC14B008BEF33 /* Row.swift */,
+				D82840A027BDCCD6008BEF33 /* List.swift */,
 				D8698EA427BD778200D4BB3C /* ContentView.swift */,
 				D8698EA927BD778500D4BB3C /* Assets.xcassets */,
 				D8698EAE27BD778500D4BB3C /* LaunchScreen.storyboard */,
 				D8698EB127BD778500D4BB3C /* Info.plist */,
 				D8698EA627BD778200D4BB3C /* MyToken_APP.xcdatamodeld */,
 				D8698EAB27BD778500D4BB3C /* Preview Content */,
+				D828409C27BDC3E6008BEF33 /* Image.swift */,
 			);
 			path = "MyToken-APP";
 			sourceTree = "<group>";
@@ -148,10 +171,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D828409627BDA6CE008BEF33 /* Coin.swift in Sources */,
+				D828409D27BDC3E6008BEF33 /* Image.swift in Sources */,
 				D8698EA127BD778200D4BB3C /* AppDelegate.swift in Sources */,
+				D8698EB927BD791A00D4BB3C /* APIService.swift in Sources */,
 				D8698EA327BD778200D4BB3C /* SceneDelegate.swift in Sources */,
 				D8698EA527BD778200D4BB3C /* ContentView.swift in Sources */,
+				D828409A27BDC14B008BEF33 /* Row.swift in Sources */,
 				D8698EA827BD778200D4BB3C /* MyToken_APP.xcdatamodeld in Sources */,
+				D82840A127BDCCD6008BEF33 /* List.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

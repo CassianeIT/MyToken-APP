@@ -8,9 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var results = [DetailCoin]()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        List(results, id: \.name) { item in
+            VStack(alignment: .leading) {
+                Text(item.id)
+                    .font(.headline)
+                Text(item.name)
+            }
+        }
+        .task {
+            
+        }
+    }
+    
+    func loadData() {
+    
     }
 }
 
