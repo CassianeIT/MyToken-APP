@@ -10,6 +10,7 @@ import SwiftUI
 struct ListCoins: View {
     
     @ObservedObject var viewModel: CoinViewModel
+    @State private var searchText = ""
     
     var body: some View {
         NavigationView {
@@ -18,11 +19,19 @@ struct ListCoins: View {
                     Text(coin.symbol.uppercased())
                     Spacer()
                     Text(coin.name)
-                }.navigationTitle("Pesquise sua criptomoeda").navigationBarTitleDisplayMode(.inline)
+                }
             }
-            .task {
-                viewModel.fetchCoins(coin: "bitcoin")
+            .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always)
+            )
+            .onSubmit(of: .search) {
+                viewModel.fetchCoins(coin: searchText.lowercased())
+              //  List.refreshable()
             }
+            .navigationTitle("My Tokens".uppercased()).navigationBarTitleDisplayMode(.inline)
+            
+//            .task {
+//                
+//            }
         }
     }
 }

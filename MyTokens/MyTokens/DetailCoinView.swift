@@ -22,7 +22,7 @@ struct DetailCoinView: View {
                         Spacer()
                         Text("Description: \(item.detailCoinDescription.en)")
                         
-                    }.navigationTitle("My Tokens")
+                    }.navigationTitle("\(item.symbol.uppercased())").navigationBarTitleDisplayMode(.inline)
                 }
             }
         }

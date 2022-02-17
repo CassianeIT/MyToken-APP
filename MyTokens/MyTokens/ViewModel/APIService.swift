@@ -12,9 +12,9 @@ class CoinViewModel: ObservableObject {
     
     @Published var coins: [DetailCoin] = [DetailCoin]()
     
-    init()  {
-        fetchCoins(coin: String())
-    }
+//    init()  {
+//        fetchCoins(coin: String())
+//    }
     
     
     func fetchCoins(coin: String) {
@@ -48,15 +48,17 @@ class CoinViewModel: ObservableObject {
                 
             } else {
                 do {
-                    let jsonModel = try JSONDecoder().decode(DetailCoin.self, from: data!)
-                  //  print(jsonModel)
+                    let decoder = JSONDecoder()
+
+                    let jsonModel = try decoder.decode(DetailCoin.self, from: data!)
+                    print(jsonModel)
                     DispatchQueue.main.async {
                     self.coins = [jsonModel]
                         print(self.coins)
                     //            showData(id: jsonModel.id, symbol: jsonModel.symbol, name: jsonModel.detailCoinDescription, jsonModel.image, jsonModel.marketData)
                     }
                 } catch  {
-                    print("Failed to decode JSON: \(error.localizedDescription)")
+                    print("Failed to decode JSON: \(error)")
                 }
             }
         }.resume()

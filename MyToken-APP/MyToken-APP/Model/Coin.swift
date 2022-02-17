@@ -61,7 +61,7 @@ struct MarketData: Codable {
     
     // MARK: - CurrentPrice
     struct CurrentPrice: Codable {
-        let brl, usd, eur, btc: Int
+        let brl, usd, eur, btc: Double
     }
 }
 //
