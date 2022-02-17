@@ -8,17 +8,30 @@
 import Foundation
 import UIKit
 import SwiftUI
+//
+//protocol Detailable {
+//    var id: String {get}
+//    var symbol: String {get}
+//    var name: String {get}
+//    var detailCoinDescription: Description {get}
+//    var image: Images {get}
+//    var marketData: MarketData {get}
+//}
 
-struct Response: Codable {
-    var results: [DetailCoin]
-}
+//struct Response: Codable {
+//    var results: [DetailCoin]
+//}
+
+
 
 // MARK: - DetailCoin
-struct DetailCoin: Codable {
-    let id, symbol, name: String
-    let detailCoinDescription: Description
-    let image: Images
-    let marketData: MarketData
+struct DetailCoin: Identifiable, Codable {
+    var id: String
+    var symbol: String
+    var name: String
+    var detailCoinDescription: Description
+    var image: Images
+    var marketData: MarketData
 
     enum CodingKeys: String, CodingKey {
         case id, symbol, name
@@ -51,7 +64,12 @@ struct MarketData: Codable {
         let brl, usd, eur, btc: Int
     }
 }
-
+//
+//extension DetailCoin: Detailable {
+//    var names: String {
+//        return symbol
+//    }
+//}
 
 //extension Images {
 //    var image: CGImage {

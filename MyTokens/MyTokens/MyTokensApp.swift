@@ -13,8 +13,9 @@ struct MyTokensApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ListCoins(viewModel: CoinViewModel())
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
+
