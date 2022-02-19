@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D82A8FA727C089F30092260F /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82A8FA627C089F30092260F /* Favorites.swift */; };
 		D8624E9227BDE21A0081BF7D /* MyTokensApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8624E9127BDE21A0081BF7D /* MyTokensApp.swift */; };
 		D8624E9427BDE21A0081BF7D /* DetailCoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8624E9327BDE21A0081BF7D /* DetailCoinView.swift */; };
 		D8624E9627BDE21B0081BF7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8624E9527BDE21B0081BF7D /* Assets.xcassets */; };
@@ -15,12 +16,15 @@
 		D8624E9E27BDE21B0081BF7D /* MyTokens.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8624E9C27BDE21B0081BF7D /* MyTokens.xcdatamodeld */; };
 		D8624EA527BDE26D0081BF7D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8624EA427BDE26D0081BF7D /* APIService.swift */; };
 		D8624EA827BDE27B0081BF7D /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8624EA727BDE27B0081BF7D /* Coin.swift */; };
-		D8624EAA27BDE32B0081BF7D /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8624EA927BDE32B0081BF7D /* Image.swift */; };
 		D8624EAD27BE8A710081BF7D /* ListCoins.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8624EAC27BE8A710081BF7D /* ListCoins.swift */; };
-		D8624EAF27BE8E160081BF7D /* RowCoins.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8624EAE27BE8E160081BF7D /* RowCoins.swift */; };
+		D8B140D527BF572D00E018FB /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B140D427BF572D00E018FB /* ViewModel.swift */; };
+		D8B140D827C05E0E00E018FB /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = D8B140D727C05E0E00E018FB /* Lottie */; };
+		D8B140DA27C05ED500E018FB /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B140D927C05ED500E018FB /* LottieView.swift */; };
+		D8B140DC27C0615A00E018FB /* starAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = D8B140DB27C0615A00E018FB /* starAnimation.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D82A8FA627C089F30092260F /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 		D8624E8E27BDE21A0081BF7D /* MyTokens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTokens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8624E9127BDE21A0081BF7D /* MyTokensApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTokensApp.swift; sourceTree = "<group>"; };
 		D8624E9327BDE21A0081BF7D /* DetailCoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoinView.swift; sourceTree = "<group>"; };
@@ -30,9 +34,10 @@
 		D8624E9D27BDE21B0081BF7D /* MyTokens.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyTokens.xcdatamodel; sourceTree = "<group>"; };
 		D8624EA427BDE26D0081BF7D /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		D8624EA727BDE27B0081BF7D /* Coin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
-		D8624EA927BDE32B0081BF7D /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Image.swift; path = "../../MyToken-APP/MyToken-APP/Image.swift"; sourceTree = "<group>"; };
 		D8624EAC27BE8A710081BF7D /* ListCoins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoins.swift; sourceTree = "<group>"; };
-		D8624EAE27BE8E160081BF7D /* RowCoins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowCoins.swift; sourceTree = "<group>"; };
+		D8B140D427BF572D00E018FB /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		D8B140D927C05ED500E018FB /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		D8B140DB27C0615A00E018FB /* starAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = starAnimation.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8B140D827C05E0E00E018FB /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,12 +73,12 @@
 			children = (
 				D8624EAB27BE80460081BF7D /* ViewModel */,
 				D8624EA627BDE27B0081BF7D /* Model */,
-				D8624E9127BDE21A0081BF7D /* MyTokensApp.swift */,
 				D8624E9327BDE21A0081BF7D /* DetailCoinView.swift */,
 				D8624EAC27BE8A710081BF7D /* ListCoins.swift */,
-				D8624EAE27BE8E160081BF7D /* RowCoins.swift */,
-				D8624EA927BDE32B0081BF7D /* Image.swift */,
+				D82A8FA627C089F30092260F /* Favorites.swift */,
+				D8B140DD27C0642700E018FB /* Lottie */,
 				D8624E9527BDE21B0081BF7D /* Assets.xcassets */,
+				D8624E9127BDE21A0081BF7D /* MyTokensApp.swift */,
 				D8624E9A27BDE21B0081BF7D /* Persistence.swift */,
 				D8624E9C27BDE21B0081BF7D /* MyTokens.xcdatamodeld */,
 				D8624E9727BDE21B0081BF7D /* Preview Content */,
@@ -101,8 +107,18 @@
 			isa = PBXGroup;
 			children = (
 				D8624EA427BDE26D0081BF7D /* APIService.swift */,
+				D8B140D427BF572D00E018FB /* ViewModel.swift */,
+				D8B140D927C05ED500E018FB /* LottieView.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D8B140DD27C0642700E018FB /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				D8B140DB27C0615A00E018FB /* starAnimation.json */,
+			);
+			path = Lottie;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +137,9 @@
 			dependencies = (
 			);
 			name = MyTokens;
+			packageProductDependencies = (
+				D8B140D727C05E0E00E018FB /* Lottie */,
+			);
 			productName = MyTokens;
 			productReference = D8624E8E27BDE21A0081BF7D /* MyTokens.app */;
 			productType = "com.apple.product-type.application";
@@ -149,6 +168,9 @@
 				Base,
 			);
 			mainGroup = D8624E8527BDE21A0081BF7D;
+			packageReferences = (
+				D8B140D627C05E0E00E018FB /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = D8624E8F27BDE21A0081BF7D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -164,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8624E9927BDE21B0081BF7D /* Preview Assets.xcassets in Resources */,
+				D8B140DC27C0615A00E018FB /* starAnimation.json in Resources */,
 				D8624E9627BDE21B0081BF7D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,14 +198,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8624EAA27BDE32B0081BF7D /* Image.swift in Sources */,
+				D8B140D527BF572D00E018FB /* ViewModel.swift in Sources */,
 				D8624EA827BDE27B0081BF7D /* Coin.swift in Sources */,
 				D8624EAD27BE8A710081BF7D /* ListCoins.swift in Sources */,
 				D8624E9B27BDE21B0081BF7D /* Persistence.swift in Sources */,
 				D8624EA527BDE26D0081BF7D /* APIService.swift in Sources */,
 				D8624E9427BDE21A0081BF7D /* DetailCoinView.swift in Sources */,
-				D8624EAF27BE8E160081BF7D /* RowCoins.swift in Sources */,
 				D8624E9227BDE21A0081BF7D /* MyTokensApp.swift in Sources */,
+				D82A8FA727C089F30092260F /* Favorites.swift in Sources */,
+				D8B140DA27C05ED500E018FB /* LottieView.swift in Sources */,
 				D8624E9E27BDE21B0081BF7D /* MyTokens.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +412,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D8B140D627C05E0E00E018FB /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D8B140D727C05E0E00E018FB /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8B140D627C05E0E00E018FB /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		D8624E9C27BDE21B0081BF7D /* MyTokens.xcdatamodeld */ = {
