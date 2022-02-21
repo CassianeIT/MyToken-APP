@@ -18,9 +18,15 @@ import SwiftUI
 //    var marketData: MarketData {get}
 //}
 
-//struct Response: Codable {
-//    var results: [DetailCoin]
-//}
+struct FavoritesCoins {
+    var id: String
+    var symbol: String
+    var name: String
+    var description: String
+    var imageSmall: String
+    var prices: [String: Double]
+    
+}
 
 
 

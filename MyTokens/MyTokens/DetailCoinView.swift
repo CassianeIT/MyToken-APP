@@ -1,28 +1,32 @@
 import SwiftUI
+import CoreData
 
 
 struct DetailCoinView: View {
-    
+    @Environment(\.managedObjectContext) var managedObjectContext
+
     @ObservedObject var viewModel: CoinViewModel
-    @State private var showDetails = true
+    @State private var removeFavorites = true
     @State private var showingAlert = false
-    
-    
+    @State var isFavorite = false
     @State private var messageAlert = "Cryptocurrency removed from your favorites"
-    var coinSymbol = String()
-    var coinPriceBRL = Double()
-    var coinPriceUSD = Double()
-    var coinPriceEUR = Double()
-    var coinPriceBTC = Double()
-    
-    
-    
+    @State var favoritesCoreData: [NSManagedObject] = []
+   
+    @FetchRequest(
+        entity: Coin.entity(),
+        sortDescriptors: [
+            NSSortDescriptor(keyPath: \Coin.coinName, ascending: true),
+        ]
+    ) var coinNames: FetchedResults<Coin>
+
     var body: some View {
 
         let coins = viewModel.coins[0]
             
         NavigationView{
-             List(viewModel.coins) { item in
+            List {
+                ForEach(viewModel.coins, id: \.id) { item in
+             //   (viewModel.coins) { item in
             VStack(alignment: .leading) {
                // Color.purple.ignoresSafeArea()
                 Text(coins.symbol.uppercased())
@@ -54,14 +58,26 @@ struct DetailCoinView: View {
                 }, trailing: HStack {
                 
                     Button(action: {
-                        showDetails.toggle()
+                        removeFavorites.toggle()
                         
-                        if showDetails {
+                        if removeFavorites {
                             showingAlert = true
+                            isFavorite = false
+                            
+                        } else {
+                            isFavorite = true
+                            let coinName = Coin(context: managedObjectContext)
+                            coinName.coinName = coins.name
+                            do {
+                                try managedObjectContext.save()
+                            } catch {
+                                print("Falha ao salvar")
+                            }
+
                         }
                         
                     }, label: {
-                        if showDetails {
+                        if removeFavorites {
                             Image(systemName: "star").padding(.trailing, 20)
                             
                         } else {
@@ -80,23 +96,21 @@ struct DetailCoinView: View {
                 .navigationTitle("\(coins.symbol.uppercased())")
                 .navigationBarTitleDisplayMode(.inline)
                 
-               
+                }
+               // .onDelete(perform: deleteCoin)
             }
             
         }
         
     }
     
-}
-//
-//func delegateFavorite() {
-//
-//    .alert("Important message", isPresented: $showingAlert) {
-//        Button("OK", role: .cancel) { }
+//    func deleteCoin(at offsets: IndexSet) {
+//        for index in offsets {
+//            let coinNames = coinNames[index]
+//            managedObjectContext.delete(coinNames)
+//        }
 //    }
-//
-//    print("hrlo")
-//}
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

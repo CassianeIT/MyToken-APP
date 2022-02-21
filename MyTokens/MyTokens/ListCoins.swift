@@ -16,7 +16,6 @@ struct ListCoins: View {
     
     var body: some View {
         
-        
         //        let color =
         //        LinearGradient(gradient: Gradient(colors: [Color.red, Color.blue]), startPoint: .top, endPoint: .bottom)
         //                  .edgesIgnoringSafeArea(.vertical)
@@ -32,12 +31,13 @@ struct ListCoins: View {
                     List(viewModel.coins) { coin in
                         NavigationLink(destination: DetailCoinView(viewModel: viewModel)){
                             ListItemCell(viewModel: viewModel)
-                        }.listRowBackground(Color.yellow.opacity(0.5))
+                        }
+                        //.listRowBackground(Color.yellow.opacity(0.5))
                     }
                     .onAppear() {
                         UITableView.appearance().backgroundColor = UIColor.white
                     }
-                  
+                    
                     .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always)
                     )
                     .onSubmit(of: .search) {
@@ -60,10 +60,10 @@ struct ListCoins: View {
         } .accentColor(.yellow)
         
         
-        
-        
     }
 }
+
+
 struct ListItemCell: View {
     @ObservedObject var viewModel: CoinViewModel
     
@@ -71,23 +71,33 @@ struct ListItemCell: View {
     
     var body: some View {
         //  Color.purple.ignoresSafeArea()
-        
-        HStack {
-            AsyncImage(url: URL(string: viewModel.coins[0].image.small)) { image in
-                image.resizable()
-            } placeholder: {
-                Color.yellow.opacity(0.5)
-            }
-            .frame(width: 50, height: 50)
-            .clipShape(RoundedRectangle(cornerRadius: 25))
-            .transition(.scale)
+        ZStack (alignment: .leading) {
             
-            VStack(alignment: .leading, spacing: 5){
+            Color.yellow
+                .frame(height: 100)
+                .clipShape(CShape())
+                .cornerRadius(15)
+                .contentShape(CShape())
+            
+            HStack {
+                AsyncImage(url: URL(string: viewModel.coins[0].image.small)) { image in
+                    image.resizable()
+                } placeholder: {
+                    Color.yellow.opacity(0.5)
+                }
+                .frame(width: 50, height: 50)
+                .clipShape(RoundedRectangle(cornerRadius: 25))
+                .transition(.scale)
                 
-                //  Image(viewModel.coins[0].image)
-                Text(viewModel.coins[0].symbol.uppercased())
-                Text(viewModel.coins[0].name)
-            }
+                VStack(alignment: .leading, spacing: 0){
+                    
+                    //  Image(viewModel.coins[0].image)
+                    Text("Symbol: \(viewModel.coins[0].symbol.uppercased())").padding(.leading, 15)
+                    
+                    Text("Name: \(viewModel.coins[0].name)").padding(.leading, 15)
+                    
+                }
+            }.padding(.leading, 30)
         }
     }
 }

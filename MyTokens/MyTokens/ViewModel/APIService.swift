@@ -11,15 +11,16 @@ import SwiftUI
 class CoinViewModel: ObservableObject {
         
     @Published var coins = [DetailCoin]()
+ //   private var tasks: Set<DetailCoin>
+
     
 //    init()  {
 //        self.coins = DetailCoin
 //    }
-    
-    
+
     func fetchCoins(coin: String) {
         
-         let url = URL(string: "https://api.coingecko.com/api/v3/coins/\(coin)")!
+        guard let url = URL(string: "https://api.coingecko.com/api/v3/coins/\(coin)") else {return}
         
         
         URLSession.shared.dataTask(with: url) { data, response, error in
@@ -34,7 +35,8 @@ class CoinViewModel: ObservableObject {
                     print(jsonModel)
                     DispatchQueue.main.async {
                         self.coins = [jsonModel]
-                        print(self.coins)
+                    //b    self.tasks = jsonModel
+                      //  print(self.coins)
 //                        let viewModel = ViewModel()
 //                        viewModel.showData(id: self.coins[0].id, symbol: self.coins[0].symbol, name: self.coins[0].name, detailCoinDescription: self.coins[0].detailCoinDescription, image: self.coins[0].image, marketData: self.coins[0].marketData)
                         
@@ -46,36 +48,23 @@ class CoinViewModel: ObservableObject {
         }.resume()
     }
     
-    
+//    func add(_ task: DetailCoin) {
+//        objectWillChange.send()
+//        tasks.insert(task.id)
+//        save()
+//    }
+//    
+//    func remove(_ task: DetailCoin) {
+//        objectWillChange.send()
+//        tasks.remove(tasks.id)
+//        save()
+//    }
+//    
+//    func save() {
+//        let encoder = JSONEncoder()
+//        if let encoded = try? encoder.encode(DetailCoin) {
+//            defaults.set(encoded, forKey: "CoinViewModel")
+//        }
+//    }
  
-    
-    //final class ImageCoin {
-    //
-    //    typealias GRImageDictionary = [String: CGImage]
-    //    fileprivate var images: GRImageDictionary = [:]
-    //    fileprivate static var scale = 2
-    //    static var shared = ImageCoin()
-    //
-    //    func image(name: String) -> Image {
-    //        let index = guaranteeImage(name: name)
-    //
-    //        return Image(images.values[index], scale: CGFloat(ImageCoin.scale), label: Text(verbatim: name))
-    //    }
-    //
-    //    static func loadPNGImage(name: String) -> CGImage {
-    //        guard
-    //            let url = Bundle.main.url(forResource: name, withExtension: "png"),
-    //            let imageSource = CGImageSourceCreateWithURL(url as NSURL, nil),
-    //            let image = CGImageSourceCreateImageAtIndex(imageSource, 0, nil)
-    //        else {
-    //            fatalError("Couldn't load image \(name).png from main bundle.")
-    //        }
-    //        return image
-    //    }
-    //    fileprivate func guaranteeImage(name: String) -> GRImageDictionary.Index {
-    //        if let index = images.index(forKey: name) { return index }
-    //
-    //        images[name] = ImageCoin.loadPNGImage(name: name)
-    //        return images.index(forKey: name)!
-    //    }
 }
