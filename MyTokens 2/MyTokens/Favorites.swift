@@ -80,7 +80,7 @@ struct Favorites: View {
                                 VStack {
                                     Text(coinsIndex.coinName ?? "Falha ao obter Coin")
                                     if networkReachability.reachable {
-                                        Text("Price USD:\(coinsIndex.coinPrice)")
+                                        Text("Price USD:")
                                     } else {
                                         Text("Price USD: \(coinsIndex.coinPrice)")
                                             .fontWeight(.semibold)
@@ -123,11 +123,11 @@ struct Favorites: View {
             //    .background(Color.yellow)
             //  .accentColor(.yellow)
         }
-//        .onAppear() {
-//
-//            favoritesTeste.append(viewModel.coins[0].marketData.currentPrice.usd)
-//            print(favoritesTeste)
-//        }
+        .onAppear() {
+          
+            favoritesTeste.append(viewModel.coins[0].marketData.currentPrice.usd)
+            print(favoritesTeste)
+        }
         .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always)
         )
         .onSubmit(of: .search) {

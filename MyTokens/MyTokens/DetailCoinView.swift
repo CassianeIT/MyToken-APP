@@ -6,7 +6,7 @@ struct DetailCoinView: View {
     @Environment(\.managedObjectContext) var managedObjectContext
 
     @ObservedObject var viewModel: CoinViewModel
-    @State private var removeFavorites = true
+    @State private var controleFavorites = true
     @State private var showingAlert = false
     @State var isFavorite = false
     @State private var messageAlert = "Cryptocurrency removed from your favorites"
@@ -58,16 +58,17 @@ struct DetailCoinView: View {
                 }, trailing: HStack {
                 
                     Button(action: {
-                        removeFavorites.toggle()
+                        controleFavorites.toggle()
                         
-                        if removeFavorites {
+                        if controleFavorites {
                             showingAlert = true
                             isFavorite = false
                             
                         } else {
                             isFavorite = true
-                            let coinName = Coin(context: managedObjectContext)
-                            coinName.coinName = coins.name
+                            let coin = Coin(context: managedObjectContext)
+                            coin.coinName = coins.name
+                            coin.coinPrice = coins.marketData.currentPrice.usd
                             do {
                                 try managedObjectContext.save()
                             } catch {
@@ -77,7 +78,7 @@ struct DetailCoinView: View {
                         }
                         
                     }, label: {
-                        if removeFavorites {
+                        if controleFavorites {
                             Image(systemName: "star").padding(.trailing, 20)
                             
                         } else {
@@ -112,7 +113,7 @@ struct DetailCoinView: View {
 //    }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct DetailList_Previews: PreviewProvider {
     static var previews: some View {
         DetailCoinView(viewModel: CoinViewModel())
     }

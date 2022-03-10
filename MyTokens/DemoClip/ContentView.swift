@@ -1,13 +1,14 @@
 //
-//  ListCoins.swift
-//  MyTokens
+//  ContentView.swift
+//  MyTokensAppClip
 //
 //  Created by Curitiba on 17/02/22.
 //
 
 import SwiftUI
 
-struct ListCoins: View {
+
+struct ContentView: View {
     
     
     @ObservedObject var viewModel: CoinViewModel
@@ -15,7 +16,7 @@ struct ListCoins: View {
     @State private var searchText = ""
     
     var body: some View {
-        
+    
         TabView {
             NavigationView {
                 VStack {
@@ -26,10 +27,9 @@ struct ListCoins: View {
                     
                     
                     List(viewModel.coins) { coin in
-                        NavigationLink(destination: DetailCoinView(viewModel: viewModel)){
+                        NavigationLink(destination: DetailList(viewModel: viewModel)){
                             ListItemCell(viewModel: viewModel)
                         }
-                        //.listRowBackground(Color.yellow.opacity(0.5))
                     }
                     .onAppear() {
                         UITableView.appearance().backgroundColor = UIColor.white
@@ -42,18 +42,15 @@ struct ListCoins: View {
                     }
                     
                 }
-                .background(LinearGradient(gradient: Gradient(colors: [Color.yellow, Color.orange]), startPoint: .top, endPoint: .bottom))
-                .navigationBarTitle("My Tokens".uppercased())
-                .navigationBarTitleDisplayMode(.inline)
-              
+                .background(Color.yellow)
+                
+                .navigationBarTitle("My Tokens Demo".uppercased()).navigationBarTitleDisplayMode(.inline)
+                
+                
             }
             .tabItem {
                 Label("Search", systemImage: "magnifyingglass")
                 
-            }
-            
-            Favorites(viewModel: CoinViewModel()).tabItem {
-                Label("Favorites", systemImage: "star.circle")
             }
         } .accentColor(.yellow)
         
@@ -102,6 +99,6 @@ struct ListItemCell: View {
 
 struct ListCoins_Previews: PreviewProvider {
     static var previews: some View {
-        ListCoins(viewModel: CoinViewModel())
+        ContentView(viewModel: CoinViewModel())
     }
 }

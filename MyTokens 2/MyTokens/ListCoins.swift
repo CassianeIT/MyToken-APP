@@ -16,6 +16,9 @@ struct ListCoins: View {
     
     var body: some View {
         
+        //        let color =
+        //        LinearGradient(gradient: Gradient(colors: [Color.red, Color.blue]), startPoint: .top, endPoint: .bottom)
+        //                  .edgesIgnoringSafeArea(.vertical)
         TabView {
             NavigationView {
                 VStack {
@@ -42,19 +45,24 @@ struct ListCoins: View {
                     }
                     
                 }
-                .background(LinearGradient(gradient: Gradient(colors: [Color.yellow, Color.orange]), startPoint: .top, endPoint: .bottom))
-                .navigationBarTitle("My Tokens".uppercased())
-                .navigationBarTitleDisplayMode(.inline)
-              
+                .background(Color.yellow)
+                
+                #if !APPCLIP
+                .navigationBarTitle("My Tokens".uppercased()).navigationBarTitleDisplayMode(.inline)
+                #else
+                .navigationBarTitle("My Tokens App Clip".uppercased()).navigationBarTitleDisplayMode(.inline)
+                #endif
             }
             .tabItem {
                 Label("Search", systemImage: "magnifyingglass")
                 
             }
-            
+            #if !APPCLIP
             Favorites(viewModel: CoinViewModel()).tabItem {
                 Label("Favorites", systemImage: "star.circle")
             }
+            #endif
+            
         } .accentColor(.yellow)
         
         

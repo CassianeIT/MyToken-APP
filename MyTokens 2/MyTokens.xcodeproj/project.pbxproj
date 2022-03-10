@@ -7,21 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D818D70F27D163BB00FE83CC /* connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D818D70E27D163BB00FE83CC /* connection.swift */; };
+		D818D72827D63F6300FE83CC /* MyTokensAppClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = D818D71427D63F5700FE83CC /* MyTokensAppClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D818D72D27D6401F00FE83CC /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8624EA427BDE26D0081BF7D /* APIService.swift */; };
+		D818D72F27D6403600FE83CC /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8624EA727BDE27B0081BF7D /* Coin.swift */; };
+		D818D73027D6404800FE83CC /* ListCoins.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8624EAC27BE8A710081BF7D /* ListCoins.swift */; };
+		D818D73127D6407300FE83CC /* DetailCoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8624E9327BDE21A0081BF7D /* DetailCoinView.swift */; };
+		D818D73327D6432500FE83CC /* MyTokensApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8624E9127BDE21A0081BF7D /* MyTokensApp.swift */; };
+		D818D73427D6432A00FE83CC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8624E9A27BDE21B0081BF7D /* Persistence.swift */; };
+		D818D73827D644F500FE83CC /* CShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = D818D73727D644F500FE83CC /* CShape.swift */; };
+		D818D73927D6451600FE83CC /* CShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = D818D73727D644F500FE83CC /* CShape.swift */; };
 		D82A8FA727C089F30092260F /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82A8FA627C089F30092260F /* Favorites.swift */; };
-		D84FE60627D777F600EE9FDB /* DemoClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84FE60527D777F600EE9FDB /* DemoClipApp.swift */; };
-		D84FE60827D777F600EE9FDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84FE60727D777F600EE9FDB /* ContentView.swift */; };
-		D84FE60A27D7780500EE9FDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D84FE60927D7780500EE9FDB /* Assets.xcassets */; };
-		D84FE60D27D7780500EE9FDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D84FE60C27D7780500EE9FDB /* Preview Assets.xcassets */; };
-		D84FE61727D7780500EE9FDB /* DemoClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = D84FE60327D777F600EE9FDB /* DemoClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		D84FE61C27D77A3500EE9FDB /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8624EA427BDE26D0081BF7D /* APIService.swift */; };
-		D84FE61F27D77AB300EE9FDB /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8624EA727BDE27B0081BF7D /* Coin.swift */; };
-		D84FE62127D77B9300EE9FDB /* CShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84FE62027D77B9300EE9FDB /* CShape.swift */; };
-		D84FE62227D77B9300EE9FDB /* CShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84FE62027D77B9300EE9FDB /* CShape.swift */; };
-		D84FE62327D77C4300EE9FDB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8624E9A27BDE21B0081BF7D /* Persistence.swift */; };
-		D84FE62427D77C6B00EE9FDB /* MyTokens.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8624E9C27BDE21B0081BF7D /* MyTokens.xcdatamodeld */; };
-		D84FE62927D7802A00EE9FDB /* connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84FE62827D7802A00EE9FDB /* connection.swift */; };
-		D84FE62A27D7802A00EE9FDB /* connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84FE62827D7802A00EE9FDB /* connection.swift */; };
-		D84FE62D27D792E800EE9FDB /* DetailList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84FE62527D77D0700EE9FDB /* DetailList.swift */; };
+		D84FE5FA27D6A4BD00EE9FDB /* MyTokens.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8624E9C27BDE21B0081BF7D /* MyTokens.xcdatamodeld */; };
 		D8624E9227BDE21A0081BF7D /* MyTokensApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8624E9127BDE21A0081BF7D /* MyTokensApp.swift */; };
 		D8624E9427BDE21A0081BF7D /* DetailCoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8624E9327BDE21A0081BF7D /* DetailCoinView.swift */; };
 		D8624E9627BDE21B0081BF7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8624E9527BDE21B0081BF7D /* Assets.xcassets */; };
@@ -38,23 +35,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D84FE61527D7780500EE9FDB /* PBXContainerItemProxy */ = {
+		D818D72627D63F6300FE83CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D8624E8627BDE21A0081BF7D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D84FE60227D777F600EE9FDB;
-			remoteInfo = DemoClip;
+			remoteGlobalIDString = D818D71327D63F5700FE83CC;
+			remoteInfo = MyTokensAppClip;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D84FE61827D7780500EE9FDB /* Embed App Clips */ = {
+		D818D72C27D63F6300FE83CC /* Embed App Clips */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
 			dstSubfolderSpec = 16;
 			files = (
-				D84FE61727D7780500EE9FDB /* DemoClip.app in Embed App Clips */,
+				D818D72827D63F6300FE83CC /* MyTokensAppClip.app in Embed App Clips */,
 			);
 			name = "Embed App Clips";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,17 +59,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D818D70E27D163BB00FE83CC /* connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = connection.swift; sourceTree = "<group>"; };
+		D818D71427D63F5700FE83CC /* MyTokensAppClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTokensAppClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D818D71A27D63F6300FE83CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D818D71D27D63F6300FE83CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D818D72427D63F6300FE83CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D818D72527D63F6300FE83CC /* MyTokensAppClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyTokensAppClip.entitlements; sourceTree = "<group>"; };
+		D818D73727D644F500FE83CC /* CShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CShape.swift; sourceTree = "<group>"; };
 		D82A8FA627C089F30092260F /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
-		D84FE60327D777F600EE9FDB /* DemoClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D84FE60527D777F600EE9FDB /* DemoClipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoClipApp.swift; sourceTree = "<group>"; };
-		D84FE60727D777F600EE9FDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D84FE60927D7780500EE9FDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D84FE60C27D7780500EE9FDB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D84FE61327D7780500EE9FDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D84FE61427D7780500EE9FDB /* DemoClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DemoClip.entitlements; sourceTree = "<group>"; };
-		D84FE62027D77B9300EE9FDB /* CShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CShape.swift; sourceTree = "<group>"; };
-		D84FE62527D77D0700EE9FDB /* DetailList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailList.swift; sourceTree = "<group>"; };
-		D84FE62827D7802A00EE9FDB /* connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = connection.swift; sourceTree = "<group>"; };
 		D8624E8E27BDE21A0081BF7D /* MyTokens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTokens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8624E9127BDE21A0081BF7D /* MyTokensApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTokensApp.swift; sourceTree = "<group>"; };
 		D8624E9327BDE21A0081BF7D /* DetailCoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoinView.swift; sourceTree = "<group>"; };
@@ -89,7 +83,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D84FE60027D777F600EE9FDB /* Frameworks */ = {
+		D818D71127D63F5700FE83CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -107,24 +101,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D84FE60427D777F600EE9FDB /* DemoClip */ = {
+		D818D71527D63F5700FE83CC /* MyTokensAppClip */ = {
 			isa = PBXGroup;
 			children = (
-				D84FE62527D77D0700EE9FDB /* DetailList.swift */,
-				D84FE60727D777F600EE9FDB /* ContentView.swift */,
-				D84FE60527D777F600EE9FDB /* DemoClipApp.swift */,
-				D84FE60927D7780500EE9FDB /* Assets.xcassets */,
-				D84FE61327D7780500EE9FDB /* Info.plist */,
-				D84FE61427D7780500EE9FDB /* DemoClip.entitlements */,
-				D84FE60B27D7780500EE9FDB /* Preview Content */,
+				D818D71A27D63F6300FE83CC /* Assets.xcassets */,
+				D818D72427D63F6300FE83CC /* Info.plist */,
+				D818D72527D63F6300FE83CC /* MyTokensAppClip.entitlements */,
+				D818D71C27D63F6300FE83CC /* Preview Content */,
 			);
-			path = DemoClip;
+			path = MyTokensAppClip;
 			sourceTree = "<group>";
 		};
-		D84FE60B27D7780500EE9FDB /* Preview Content */ = {
+		D818D71C27D63F6300FE83CC /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				D84FE60C27D7780500EE9FDB /* Preview Assets.xcassets */,
+				D818D71D27D63F6300FE83CC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -133,7 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				D8624E9027BDE21A0081BF7D /* MyTokens */,
-				D84FE60427D777F600EE9FDB /* DemoClip */,
+				D818D71527D63F5700FE83CC /* MyTokensAppClip */,
 				D8624E8F27BDE21A0081BF7D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -142,7 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				D8624E8E27BDE21A0081BF7D /* MyTokens.app */,
-				D84FE60327D777F600EE9FDB /* DemoClip.app */,
+				D818D71427D63F5700FE83CC /* MyTokensAppClip.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,12 +141,12 @@
 		D8624E9027BDE21A0081BF7D /* MyTokens */ = {
 			isa = PBXGroup;
 			children = (
-				D84FE62827D7802A00EE9FDB /* connection.swift */,
 				D8624EAB27BE80460081BF7D /* ViewModel */,
 				D8624EA627BDE27B0081BF7D /* Model */,
 				D8624E9327BDE21A0081BF7D /* DetailCoinView.swift */,
 				D8624EAC27BE8A710081BF7D /* ListCoins.swift */,
 				D82A8FA627C089F30092260F /* Favorites.swift */,
+				D818D70E27D163BB00FE83CC /* connection.swift */,
 				D8B140DD27C0642700E018FB /* Lottie */,
 				D8624E9527BDE21B0081BF7D /* Assets.xcassets */,
 				D8624E9127BDE21A0081BF7D /* MyTokensApp.swift */,
@@ -178,7 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				D8624EA727BDE27B0081BF7D /* Coin.swift */,
-				D84FE62027D77B9300EE9FDB /* CShape.swift */,
+				D818D73727D644F500FE83CC /* CShape.swift */,
 			);
 			name = Model;
 			path = "../../MyToken-APP/MyToken-APP/Model";
@@ -205,21 +196,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D84FE60227D777F600EE9FDB /* DemoClip */ = {
+		D818D71327D63F5700FE83CC /* MyTokensAppClip */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D84FE61B27D7780500EE9FDB /* Build configuration list for PBXNativeTarget "DemoClip" */;
+			buildConfigurationList = D818D72927D63F6300FE83CC /* Build configuration list for PBXNativeTarget "MyTokensAppClip" */;
 			buildPhases = (
-				D84FE5FF27D777F600EE9FDB /* Sources */,
-				D84FE60027D777F600EE9FDB /* Frameworks */,
-				D84FE60127D777F600EE9FDB /* Resources */,
+				D818D71027D63F5700FE83CC /* Sources */,
+				D818D71127D63F5700FE83CC /* Frameworks */,
+				D818D71227D63F5700FE83CC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = DemoClip;
-			productName = DemoClip;
-			productReference = D84FE60327D777F600EE9FDB /* DemoClip.app */;
+			name = MyTokensAppClip;
+			productName = MyTokensAppClip;
+			productReference = D818D71427D63F5700FE83CC /* MyTokensAppClip.app */;
 			productType = "com.apple.product-type.application.on-demand-install-capable";
 		};
 		D8624E8D27BDE21A0081BF7D /* MyTokens */ = {
@@ -229,12 +220,12 @@
 				D8624E8A27BDE21A0081BF7D /* Sources */,
 				D8624E8B27BDE21A0081BF7D /* Frameworks */,
 				D8624E8C27BDE21A0081BF7D /* Resources */,
-				D84FE61827D7780500EE9FDB /* Embed App Clips */,
+				D818D72C27D63F6300FE83CC /* Embed App Clips */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D84FE61627D7780500EE9FDB /* PBXTargetDependency */,
+				D818D72727D63F6300FE83CC /* PBXTargetDependency */,
 			);
 			name = MyTokens;
 			packageProductDependencies = (
@@ -254,7 +245,7 @@
 				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
-					D84FE60227D777F600EE9FDB = {
+					D818D71327D63F5700FE83CC = {
 						CreatedOnToolsVersion = 13.1;
 					};
 					D8624E8D27BDE21A0081BF7D = {
@@ -279,18 +270,16 @@
 			projectRoot = "";
 			targets = (
 				D8624E8D27BDE21A0081BF7D /* MyTokens */,
-				D84FE60227D777F600EE9FDB /* DemoClip */,
+				D818D71327D63F5700FE83CC /* MyTokensAppClip */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D84FE60127D777F600EE9FDB /* Resources */ = {
+		D818D71227D63F5700FE83CC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D84FE60D27D7780500EE9FDB /* Preview Assets.xcassets in Resources */,
-				D84FE60A27D7780500EE9FDB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,19 +296,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D84FE5FF27D777F600EE9FDB /* Sources */ = {
+		D818D71027D63F5700FE83CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D84FE62D27D792E800EE9FDB /* DetailList.swift in Sources */,
-				D84FE61C27D77A3500EE9FDB /* APIService.swift in Sources */,
-				D84FE60827D777F600EE9FDB /* ContentView.swift in Sources */,
-				D84FE61F27D77AB300EE9FDB /* Coin.swift in Sources */,
-				D84FE60627D777F600EE9FDB /* DemoClipApp.swift in Sources */,
-				D84FE62A27D7802A00EE9FDB /* connection.swift in Sources */,
-				D84FE62427D77C6B00EE9FDB /* MyTokens.xcdatamodeld in Sources */,
-				D84FE62227D77B9300EE9FDB /* CShape.swift in Sources */,
-				D84FE62327D77C4300EE9FDB /* Persistence.swift in Sources */,
+				D818D72D27D6401F00FE83CC /* APIService.swift in Sources */,
+				D818D73327D6432500FE83CC /* MyTokensApp.swift in Sources */,
+				D818D73927D6451600FE83CC /* CShape.swift in Sources */,
+				D818D73027D6404800FE83CC /* ListCoins.swift in Sources */,
+				D818D73427D6432A00FE83CC /* Persistence.swift in Sources */,
+				D84FE5FA27D6A4BD00EE9FDB /* MyTokens.xcdatamodeld in Sources */,
+				D818D73127D6407300FE83CC /* DetailCoinView.swift in Sources */,
+				D818D72F27D6403600FE83CC /* Coin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,43 +317,43 @@
 			files = (
 				D8B140D527BF572D00E018FB /* ViewModel.swift in Sources */,
 				D8624EA827BDE27B0081BF7D /* Coin.swift in Sources */,
-				D84FE62127D77B9300EE9FDB /* CShape.swift in Sources */,
 				D8624EAD27BE8A710081BF7D /* ListCoins.swift in Sources */,
 				D8624E9B27BDE21B0081BF7D /* Persistence.swift in Sources */,
 				D8624EA527BDE26D0081BF7D /* APIService.swift in Sources */,
 				D8624E9427BDE21A0081BF7D /* DetailCoinView.swift in Sources */,
+				D818D70F27D163BB00FE83CC /* connection.swift in Sources */,
 				D8624E9227BDE21A0081BF7D /* MyTokensApp.swift in Sources */,
 				D82A8FA727C089F30092260F /* Favorites.swift in Sources */,
 				D8B140DA27C05ED500E018FB /* LottieView.swift in Sources */,
 				D8624E9E27BDE21B0081BF7D /* MyTokens.xcdatamodeld in Sources */,
-				D84FE62927D7802A00EE9FDB /* connection.swift in Sources */,
+				D818D73827D644F500FE83CC /* CShape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D84FE61627D7780500EE9FDB /* PBXTargetDependency */ = {
+		D818D72727D63F6300FE83CC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D84FE60227D777F600EE9FDB /* DemoClip */;
-			targetProxy = D84FE61527D7780500EE9FDB /* PBXContainerItemProxy */;
+			target = D818D71327D63F5700FE83CC /* MyTokensAppClip */;
+			targetProxy = D818D72627D63F6300FE83CC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		D84FE61927D7780500EE9FDB /* Debug */ = {
+		D818D72A27D63F6300FE83CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = DemoClip/DemoClip.entitlements;
+				CODE_SIGN_ENTITLEMENTS = MyTokensAppClip/MyTokensAppClip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DemoClip/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MyTokensAppClip/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DemoClip/Info.plist;
+				INFOPLIST_FILE = MyTokensAppClip/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MyTokens;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -385,19 +373,19 @@
 			};
 			name = Debug;
 		};
-		D84FE61A27D7780500EE9FDB /* Release */ = {
+		D818D72B27D63F6300FE83CC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = DemoClip/DemoClip.entitlements;
+				CODE_SIGN_ENTITLEMENTS = MyTokensAppClip/MyTokensAppClip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DemoClip/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MyTokensAppClip/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DemoClip/Info.plist;
+				INFOPLIST_FILE = MyTokensAppClip/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MyTokens;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -473,7 +461,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG APPCLIP";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -527,6 +515,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = APPCLIP;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
@@ -560,7 +549,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -591,18 +580,18 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D84FE61B27D7780500EE9FDB /* Build configuration list for PBXNativeTarget "DemoClip" */ = {
+		D818D72927D63F6300FE83CC /* Build configuration list for PBXNativeTarget "MyTokensAppClip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D84FE61927D7780500EE9FDB /* Debug */,
-				D84FE61A27D7780500EE9FDB /* Release */,
+				D818D72A27D63F6300FE83CC /* Debug */,
+				D818D72B27D63F6300FE83CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
